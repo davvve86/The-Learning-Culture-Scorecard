@@ -9,20 +9,20 @@
         body {
             font-family: 'Space Grotesk', sans-serif;
             margin: 20px;
-            background-color: #f4f4f4;
-            color: #333;
+            background-color: #873cff;
+            color: white;
         }
         .container {
             max-width: 600px;
             margin: auto;
-            background: #fff;
+            background: #873cff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
         h2 {
             text-align: center;
-            color: #873cff;
+            color: white;
         }
         .question {
             margin-bottom: 15px;
@@ -37,13 +37,13 @@
             margin-top: 20px;
             padding: 10px;
             border-radius: 5px;
-            background-color: #e9f7ef;
-            border: 1px solid #873cff;
+            background-color: white;
+            border: 1px solid white;
             color: #873cff;
         }
         button {
-            background-color: #873cff;
-            color: white;
+            background-color: white;
+            color: #873cff;
             padding: 10px;
             border: none;
             border-radius: 5px;
@@ -53,12 +53,15 @@
         }
         button:hover {
             background-color: #6a2ebd;
+            color: white;
         }
         input[type="number"], input[type="email"] {
             padding: 8px;
-            border: 1px solid #ccc;
+            border: 1px solid white;
             border-radius: 5px;
             font-family: 'Space Grotesk', sans-serif;
+            background-color: #873cff;
+            color: white;
         }
     </style>
 </head>
@@ -128,3 +131,4 @@
     </script>
 </body>
 </html>
+
