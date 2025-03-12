@@ -3,12 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Culture Scorecard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        .container { max-width: 600px; margin: auto; }
-        .question { margin-bottom: 10px; display: flex; flex-direction: column; }
-        .score { font-weight: bold; }
-        .result { display: none; margin-top: 20px; padding: 10px; border: 1px solid #ccc; }
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            color: #873cff;
+        }
+        .question {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        .score {
+            font-weight: bold;
+        }
+        .result {
+            display: none;
+            margin-top: 20px;
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #e9f7ef;
+            border: 1px solid #873cff;
+            color: #873cff;
+        }
+        button {
+            background-color: #873cff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #6a2ebd;
+        }
+        input[type="number"], input[type="email"] {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: 'Space Grotesk', sans-serif;
+        }
     </style>
 </head>
 <body>
