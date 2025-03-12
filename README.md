@@ -8,60 +8,74 @@
     <style>
         body {
             font-family: 'Space Grotesk', sans-serif;
-            margin: 20px;
-            background-color: #873cff;
-            color: white;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
         }
         .container {
-            max-width: 600px;
-            margin: auto;
-            background: #873cff;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         h2 {
-            text-align: center;
-            color: white;
+            color: #873cff;
+            font-size: 28px;
+            font-weight: 700;
+        }
+        p {
+            font-size: 16px;
+            margin-bottom: 20px;
         }
         .question {
-            margin-bottom: 15px;
-            display: flex;
-            flex-direction: column;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        label {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 5px;
         }
         .score {
             font-weight: bold;
+            font-size: 20px;
         }
         .result {
             display: none;
             margin-top: 20px;
-            padding: 10px;
-            border-radius: 5px;
-            background-color: white;
-            border: 1px solid white;
+            padding: 15px;
+            border-radius: 8px;
+            background-color: #f3e8ff;
+            border: 2px solid #873cff;
             color: #873cff;
+            font-weight: 600;
         }
         button {
-            background-color: white;
-            color: #873cff;
-            padding: 10px;
+            background-color: #873cff;
+            color: white;
+            padding: 12px 20px;
             border: none;
-            border-radius: 5px;
+            border-radius: 6px;
             cursor: pointer;
-            width: 100%;
+            font-size: 16px;
             font-weight: bold;
+            transition: background 0.3s;
         }
         button:hover {
             background-color: #6a2ebd;
-            color: white;
         }
         input[type="number"], input[type="email"] {
-            padding: 8px;
-            border: 1px solid white;
-            border-radius: 5px;
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
             font-family: 'Space Grotesk', sans-serif;
-            background-color: #873cff;
-            color: white;
+            font-size: 16px;
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -70,9 +84,10 @@
         <h2>Learning Culture Scorecard</h2>
         <p>Rate each statement from 1 (Very Poor) to 5 (Excellent).</p>
         <form id="scorecard">
-            <label>Email: </label>
-            <input type="email" id="email" name="email" required>
-            <br><br>
+            <div class="question">
+                <label>Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
             <div class="question">
                 <label>1. Employees actively seek out learning opportunities.</label>
                 <input type="number" min="1" max="5" name="q1" required>
@@ -131,4 +146,3 @@
     </script>
 </body>
 </html>
-
